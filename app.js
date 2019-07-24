@@ -3,11 +3,16 @@ document.getElementById('button').onclick = function () {
 };
 
 function randomFlightButton() {
+    var countryArr = ["USA", "Britain", "Australia"];
     document.getElementById('result').innerHTML = countryList();
-    // In order to get random country, I'll need to create a database and it'll select a country based on it's number id.
-    // Lets go with Mongo since I was taught the MERN stack.
     function countryList() {
-        let countryArr = ["USA", "Britain", "Australia"];
-        // attach this to Math.random
+        countryArr;
+        var randomNumber = Math.floor(Math.random() * countryArr.length);
+        // Return needs to be done to have your result appear on the front end (from line 7).
+        // This is when a "console.log" becomes a "return"
+        return countryArr[randomNumber];
     }
 }
+
+// Future: Add a DB to store all the countries.
+// MongoDB since I was taught the MERN stack.
