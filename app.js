@@ -1,9 +1,9 @@
-document.getElementById('button').onclick = function () {
+document.getElementById('button').onclick = function generateFlight() {
     randomFlightButton()
 };
 
 function randomFlightButton() {
-    var countryArr = ["USA", "Britain", "Australia"];
+    var countryArr = ["USA", "Britain", "Australia", "Canada"];
     document.getElementById('result').innerHTML = countryList();
     function countryList() {
         countryArr;
