@@ -11,6 +11,7 @@ function randomFlightButton() {
         // Return needs to be done to have your result appear on the front end (from line 7).
         // This is when a "console.log" becomes a "return"
         return countryArr[randomNumber];
+        // When getting result, display picture of country in the background
     }
 }
 
