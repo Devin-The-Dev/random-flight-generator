@@ -3,7 +3,7 @@ document.getElementById('button').onclick = function generateFlight() {
 };
 
 function randomFlightButton() {
-    var countryArr = ["USA", "Britain", "Australia", "Canada", "Mexico", "Russia", "Egypt", "France", "Scotland", "Ireland"];
+    var countryArr = ["USA", "Britain", "Australia", "Canada", "Mexico", "Russia", "Egypt", "France", "Scotland", "Ireland", "Brazil"];
     document.getElementById('result').innerHTML = countryList();
     function countryList() {
         countryArr;
