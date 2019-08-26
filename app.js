@@ -4,6 +4,10 @@ document.getElementById('button').onclick = function generateFlight() {
 
 function randomFlightButton() {
     var countryArr = ["USA", "Britain", "Australia", "Canada", "Mexico", "Russia", "Egypt", "France", "Scotland", "Ireland", "Brazil", "Peru", "Japan"];
+    //  var countryObj = {
+    //     Europe : ["Britain", "France"],
+    //     NorthAmerica : ["USA", "Canada", "Mexico"]
+    // }
     document.getElementById('result').innerHTML = countryList();
     function countryList() {
         countryArr;
