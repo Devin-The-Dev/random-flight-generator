@@ -1,7 +1,19 @@
-.main {
+body {
     text-align: center;
+    background: whitesmoke;
 }
 
 footer a {
     color: black;
+}
+
+.jumbotron {
+    background: url("large.jpg") no-repeat center;
+    height: 500px;
+    color: whitesmoke;
+}
+
+#button {
+    color: whitesmoke;
+    opacity: 0.9;
 }
