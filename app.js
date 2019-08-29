@@ -4,9 +4,10 @@ document.getElementById('button').onclick = function generateFlight() {
 
 function randomFlightButton() {
     var countryArr = ["USA", "Britain", "Australia", "Canada", "Mexico", "Russia", "Egypt", "France", "Scotland", "Ireland", "Brazil", "Peru", "Japan"];
-    //  var countryObj = {
-    //     Europe : ["Britain", "France"],
-    //     NorthAmerica : ["USA", "Canada", "Mexico"]
+    //  var countryPhoto = {
+    //     Default: "large.jpg",
+    //     USA : "imageFile",
+    //     Britain : "imageFile"
     // }
     document.getElementById('result').innerHTML = countryList();
     function countryList() {
@@ -17,6 +18,7 @@ function randomFlightButton() {
         return countryArr[randomNumber];
         // When getting result, display picture of country in the background
     }
+    // document.getElementsByClassName('jumbotron').style.background = "url(" + countryPhoto.key + ") no-repeat center"
 }
 
 // Future: Add a DB to store all the countries.
