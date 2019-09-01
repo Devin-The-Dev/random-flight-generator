@@ -19,6 +19,9 @@ function randomFlightButton() {
         // When getting result, display picture of country in the background
     }
     // document.getElementsByClassName('jumbotron').style.background = "url(" + countryPhoto.key + ") no-repeat center"
+    // How to link randomNumber to countryPhoto key?
+
+    // How do I get the function to change the CSS?
 }
 
 // Future: Add a DB to store all the countries.
