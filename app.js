@@ -3,7 +3,7 @@ document.getElementById('button').onclick = function generateFlight() {
 };
 
 function randomFlightButton() {
-    var countryArr = ["USA", "Britain", "Australia", "Canada", "Mexico", "Russia", "Egypt", "France", "Scotland", "Ireland", "Brazil", "Peru", "Japan", "China"];
+    var countryArr = ["USA", "Britain", "Australia", "Canada", "Mexico", "Russia", "Egypt", "France", "Scotland", "Ireland", "Brazil", "Peru", "Japan", "China", "Spain"];
     //  var countryPhoto = {
     //     Default: "large.jpg",
     //     USA : "imageFile",
