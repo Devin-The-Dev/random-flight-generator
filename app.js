@@ -4,24 +4,23 @@ document.getElementById('button').onclick = function generateFlight() {
 
 function randomFlightButton() {
     var countryArr = ["USA", "Britain", "Australia", "Canada", "Mexico", "Russia", "Egypt", "France", "Scotland", "Ireland", "Brazil", "Peru", "Japan", "China", "Spain"];
-    //  var countryPhoto = {
-    //     Default: "large.jpg",
-    //     USA : "imageFile",
-    //     Britain : "imageFile"
-    // }
     document.getElementById('result').innerHTML = countryList();
     function countryList() {
         countryArr;
         var randomNumber = Math.floor(Math.random() * countryArr.length);
         // Return needs to be done to have your result appear on the front end (from line 7).
         // This is when a "console.log" becomes a "return"
+        console.log(countryArr[randomNumber]);
         return countryArr[randomNumber];
         // When getting result, display picture of country in the background
     }
-    // document.getElementsByClassName('jumbotron').style.background = "url(" + countryPhoto.key + ") no-repeat center"
-    // How to link randomNumber to countryPhoto key?
-
-    // How do I get the function to change the CSS?
+    // document.getElementsByClassName('jumbotron').style.backgroundImage = "url('" + countryList() + ".jpg') no-repeat center";
+    // --------
+    // randomFLightButton() inside above line will crash site (inifite loop)
+    // It seems like it's a syntax error
+    // countryArr[randomNumber] is in countryList(); it's a scope issue
+    // -------------
+    // countryList() throws an error "Cannot set property 'background' of undefined"
 }
 
 // Future: Add a DB to store all the countries.
