@@ -13,7 +13,7 @@ function randomFlightButton() {
         return countryArr[randomNumber];
         // When getting result, display picture of country in the background
     }
-    document.getElementsByClassName('jumbotron').style.background = "url('" + countryList() + ".jpg')";
+    document.getElementsByClassName('jumbotron')[0].style.background = "url('" + countryList() + ".jpg')";
     // cannot set property 'background' of undefined
 
     // --------
